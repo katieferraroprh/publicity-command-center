@@ -25,16 +25,46 @@ button,input,select,textarea{font:inherit}.app{display:grid;grid-template-column
 .status{font-size:11px;font-weight:700;border-radius:999px;padding:5px 8px;display:inline-block}.status.pitched{background:#e7eef5;color:#315d85}.status.follow-up-due{background:#fae7e4;color:#9a4135}.status.pending{background:#f6eddc;color:#896321}.status.confirmed,.status.covered{background:#e5f1ea;color:#35684c}.status.passed{background:#eeeeee;color:#6a6a6a}.status.researching{background:#eee9f6;color:#6c4f88}
 .task{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #eeeae4}.task input{accent-color:var(--accent)}.task.done span{text-decoration:line-through;color:var(--muted)}.muted{color:var(--muted)}.small{font-size:12px}.linklike{color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:2px}.section-title{font-size:14px;margin:0 0 10px}.notice{background:#fff8e8;border:1px solid #ead8aa;padding:12px 14px;border-radius:12px;font-size:13px;color:#72571b;margin-bottom:14px}
 
-.overview-stack{display:flex;flex-direction:column;gap:16px}.overview-hero-grid{display:grid;grid-template-columns:minmax(210px,.7fr) minmax(0,2.3fr);gap:16px}.overview-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}.overview-card-head{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px}.overview-card-head h3{margin:0;font-size:15px}.overview-card-body{padding:16px}.cover-uploader{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:250px;background:#faf9f7;border:1px dashed #c9c5bd;border-radius:14px;padding:14px;text-align:center}.cover-uploader img{width:150px;max-height:225px;object-fit:cover;border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.13)}.cover-placeholder{width:150px;height:210px;border-radius:10px;background:#eeeae4;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px;padding:18px}.indicator-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.indicator-card{border:1px solid var(--line);border-radius:12px;padding:11px;background:#fbfaf8;min-width:0}.conditional-card{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfaf8}.conditional-card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.conditional-card-head>label{margin:0!important}.toggle-wrap{display:inline-flex;align-items:center;gap:7px}.toggle-switch{position:relative;width:38px;height:22px;display:inline-block;flex:0 0 auto}.toggle-switch input{opacity:0;width:0;height:0}.toggle-slider{position:absolute;inset:0;border-radius:999px;background:#d8d5cf;cursor:pointer;transition:.18s}.toggle-slider:before{content:"";position:absolute;width:16px;height:16px;left:3px;top:3px;border-radius:50%;background:white;box-shadow:0 1px 3px rgba(0,0,0,.18);transition:.18s}.toggle-switch input:checked+.toggle-slider{background:var(--accent)}.toggle-switch input:checked+.toggle-slider:before{transform:translateX(16px)}.toggle-state{font-size:11px;font-weight:700;color:var(--muted);min-width:24px}.yesno-toggle{display:inline-flex;border:1px solid #d7d3cc;border-radius:999px;overflow:hidden;background:#fff}.yesno-toggle button{border:0;background:transparent;padding:5px 10px;font-size:11px;font-weight:750;color:var(--muted);cursor:pointer}.yesno-toggle button.active{background:var(--accent);color:#fff}.conditional-fields{display:grid;grid-template-columns:1fr 1fr;gap:8px}.conditional-fields.three{grid-template-columns:repeat(3,1fr)}.conditional-fields.one{grid-template-columns:1fr}.conditional-fields label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:750;color:var(--muted);margin-bottom:5px}.conditional-fields input,.conditional-fields select{width:100%;border:1px solid #d9d5ce;border-radius:8px;background:#fff;padding:8px;font-size:12px}.indicator-card label,.overview-field label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:750;color:var(--muted);margin-bottom:6px}.indicator-card input,.indicator-card select,.overview-field input,.overview-field select,.overview-field textarea{width:100%;border:1px solid #d9d5ce;border-radius:8px;background:#fff;padding:8px;font-size:12px}.overview-field textarea{min-height:110px;resize:vertical;line-height:1.45}.indicator-card .inline-link{display:flex;gap:6px}.indicator-card .inline-link input{min-width:0}.overview-section-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.overview-copy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.overview-team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.team-role{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfaf8}.team-role h4{margin:0 0 10px;font-size:12px}.team-role textarea{min-height:76px}.team-contact-row{display:grid;grid-template-columns:1fr 1.25fr;gap:8px;align-items:end}.team-contact-row .overview-field{min-width:0}.due-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.mini-help{font-size:11px;color:var(--muted);margin-top:5px}.ng-open{white-space:nowrap;padding:8px 9px}.section-note{font-size:11px;color:var(--muted)}
-@media(max-width:1100px){.grid-metrics{grid-template-columns:repeat(3,1fr)}.layout-2{grid-template-columns:1fr}.info-grid{grid-template-columns:repeat(2,1fr)}.indicator-grid{grid-template-columns:repeat(2,1fr)}.overview-copy-grid{grid-template-columns:1fr}.due-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.overview-hero-grid,.overview-section-grid,.overview-team-grid{grid-template-columns:1fr}.indicator-grid,.due-grid{grid-template-columns:1fr}.app{grid-template-columns:1fr}.sidebar{height:auto;position:static}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap}.sidebar-bottom{display:none}.main{padding:20px 15px}.grid-metrics{grid-template-columns:repeat(2,1fr)}.campaign-header{flex-direction:column}.info-grid,.two-col,.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.campaign-list th:nth-child(4),.campaign-list td:nth-child(4),.campaign-list th:nth-child(5),.campaign-list td:nth-child(5){display:none}.conditional-fields.three,.team-contact-row{grid-template-columns:1fr}}
+.overview-stack{display:flex;flex-direction:column;gap:16px}.overview-hero-grid{display:grid;grid-template-columns:minmax(210px,.7fr) minmax(0,2.3fr);gap:16px}.overview-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}.overview-card-head{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px}.overview-card-head h3{margin:0;font-size:15px}.overview-card-body{padding:16px}.cover-uploader{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:250px;background:#faf9f7;border:1px dashed #c9c5bd;border-radius:14px;padding:14px;text-align:center}.cover-uploader img{width:150px;max-height:225px;object-fit:cover;border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.13)}.cover-placeholder{width:150px;height:210px;border-radius:10px;background:#eeeae4;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px;padding:18px}.indicator-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.indicator-card{border:1px solid var(--line);border-radius:12px;padding:11px;background:#fbfaf8;min-width:0}.conditional-card{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfaf8;min-width:0}.conditional-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px;min-width:0;flex-wrap:wrap}.conditional-card-head>label{margin:0!important;min-width:0;flex:1 1 120px;line-height:1.3}.toggle-wrap{display:inline-flex;align-items:center;gap:7px}.toggle-switch{position:relative;width:38px;height:22px;display:inline-block;flex:0 0 auto}.toggle-switch input{opacity:0;width:0;height:0}.toggle-slider{position:absolute;inset:0;border-radius:999px;background:#d8d5cf;cursor:pointer;transition:.18s}.toggle-slider:before{content:"";position:absolute;width:16px;height:16px;left:3px;top:3px;border-radius:50%;background:white;box-shadow:0 1px 3px rgba(0,0,0,.18);transition:.18s}.toggle-switch input:checked+.toggle-slider{background:var(--accent)}.toggle-switch input:checked+.toggle-slider:before{transform:translateX(16px)}.toggle-state{font-size:11px;font-weight:700;color:var(--muted);min-width:24px}.yesno-toggle{display:inline-flex;border:1px solid #d7d3cc;border-radius:999px;overflow:hidden;background:#fff;flex:0 0 auto;max-width:100%}.yesno-toggle button{border:0;background:transparent;padding:5px 9px;font-size:11px;font-weight:750;color:var(--muted);cursor:pointer;white-space:nowrap}.yesno-toggle button.active{background:var(--accent);color:#fff}.conditional-fields{display:grid;grid-template-columns:1fr 1fr;gap:8px}.conditional-fields.three{grid-template-columns:repeat(3,1fr)}.conditional-fields.one{grid-template-columns:1fr}.conditional-fields label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:750;color:var(--muted);margin-bottom:5px}.conditional-fields input,.conditional-fields select{width:100%;border:1px solid #d9d5ce;border-radius:8px;background:#fff;padding:8px;font-size:12px}.indicator-card label,.overview-field label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:750;color:var(--muted);margin-bottom:6px}.indicator-card input,.indicator-card select,.overview-field input,.overview-field select,.overview-field textarea{width:100%;border:1px solid #d9d5ce;border-radius:8px;background:#fff;padding:8px;font-size:12px}.overview-field textarea{min-height:110px;resize:vertical;line-height:1.45}.rich-editor{border:1px solid #d9d5ce;border-radius:10px;background:#fff;overflow:hidden}.rich-toolbar{display:flex;gap:5px;flex-wrap:wrap;align-items:center;padding:7px;border-bottom:1px solid #e6e2db;background:#faf9f7}.rich-toolbar button,.rich-toolbar select{border:1px solid #d9d5ce;background:#fff;border-radius:7px;padding:5px 7px;font-size:11px;cursor:pointer}.rich-toolbar button{min-width:30px;font-weight:700}.rich-toolbar .sep{width:1px;height:24px;background:#ddd8d0;margin:0 2px}.rich-body{min-height:145px;padding:10px 11px;outline:none;font-size:13px;line-height:1.5;overflow:auto}.rich-body:empty:before{content:attr(data-placeholder);color:#9a9a94}.rich-body ul,.rich-body ol{padding-left:22px}.rich-body p{margin:.4em 0}.rich-body h3{font-size:16px;margin:.5em 0}.rich-body blockquote{margin:.6em 0;padding-left:10px;border-left:3px solid #d6d2ca;color:#666}.indicator-card .inline-link{display:flex;gap:6px}.indicator-card .inline-link input{min-width:0}.overview-section-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.overview-copy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.overview-team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.team-role{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfaf8}.team-role h4{margin:0 0 10px;font-size:12px}.team-role textarea{min-height:76px}.team-contact-row{display:grid;grid-template-columns:1fr 1.25fr;gap:8px;align-items:end}.team-contact-row .overview-field{min-width:0}.team-contact-list{display:flex;flex-direction:column;gap:8px}.team-contact-entry{display:grid;grid-template-columns:1fr 1.25fr auto;gap:8px;align-items:end}.team-contact-entry .btn{padding:7px 9px;font-size:11px}.team-add-row{margin-top:9px}.team-add-row .btn{font-size:11px;padding:7px 10px}.due-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.mini-help{font-size:11px;color:var(--muted);margin-top:5px}.ng-open{white-space:nowrap;padding:8px 9px}.section-note{font-size:11px;color:var(--muted)}
+@media(max-width:1100px){.grid-metrics{grid-template-columns:repeat(3,1fr)}.layout-2{grid-template-columns:1fr}.info-grid{grid-template-columns:repeat(2,1fr)}.indicator-grid{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.overview-copy-grid{grid-template-columns:1fr}.due-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.overview-hero-grid,.overview-section-grid,.overview-team-grid{grid-template-columns:1fr}.indicator-grid,.due-grid{grid-template-columns:1fr}.app{grid-template-columns:1fr}.sidebar{height:auto;position:static}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap}.sidebar-bottom{display:none}.main{padding:20px 15px}.grid-metrics{grid-template-columns:repeat(2,1fr)}.campaign-header{flex-direction:column}.info-grid,.two-col,.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.campaign-list th:nth-child(4),.campaign-list td:nth-child(4),.campaign-list th:nth-child(5),.campaign-list td:nth-child(5){display:none}.conditional-fields.three,.team-contact-row,.team-contact-entry{grid-template-columns:1fr}}
 
 .material-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.material-card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff;display:flex;flex-direction:column;gap:8px}.material-card h4{margin:0;font-size:14px}.material-meta{font-size:12px;color:var(--muted)}.material-actions{display:flex;gap:7px;margin-top:auto;flex-wrap:wrap}.upload-box{border:1px dashed #bfc6c2;border-radius:14px;padding:16px;background:#fbfcfb;margin-bottom:14px}.upload-row{display:grid;grid-template-columns:1.2fr .8fr .8fr 1.4fr auto;gap:9px;align-items:end}.upload-row input,.upload-row select{width:100%;border:1px solid var(--line);border-radius:9px;padding:8px;background:#fff}.book-cover{width:138px;max-height:205px;object-fit:cover;border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.13)}.cover-wrap{display:flex;gap:20px;align-items:flex-start}.pitch-summary{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.feedback-select{border:1px solid var(--line);border-radius:8px;padding:6px 7px;background:#fff;font-size:12px}.feedback-confirmed{background:#e5f1ea}.feedback-interest{background:#fff3d9}.feedback-passed{background:#eeeeee}.feedback-bounceback{background:#fae7e4}.feedback-pause-pitching{background:#eee9f6}.feedback-no-response{background:#fff}.feedback-undeliverable{background:#fdeedc}.status.undeliverable{background:#fdeedc;color:#8c561f}.response-detail{display:inline-block;margin-top:7px;padding:5px 8px;border-radius:8px;background:#f3f1ec;font-size:11px;font-weight:700;color:#5d625f}.replacement-box{margin-top:10px;padding:10px 12px;border:1px solid #d9ddd9;background:#f8faf9;border-radius:10px;font-size:12px}.response-delete{margin-left:auto}.editable-note{min-width:180px;border:1px solid transparent;border-radius:7px;padding:6px;background:transparent}.editable-note:hover,.editable-note:focus{border-color:var(--line);background:#fff;outline:none}.sync-note{display:flex;gap:10px;align-items:flex-start;background:#f4f6f7;border:1px solid #dce1e3;border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:13px}.status.interest,.status.interested{background:#fff3d9;color:#8b651e}.status.bounceback{background:#fae7e4;color:#9a4135}.status.pause-pitching{background:#eee9f6;color:#6c4f88}.status.no-response{background:#f0f0f0;color:#666}
 .response-drop{border:1.5px dashed #b7c2bd;border-radius:14px;padding:18px;background:#fbfcfb;text-align:center}.response-drop.drag{background:#eef5f2;border-color:var(--accent)}.response-card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff;margin-bottom:10px}.response-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.response-body{font-size:12px;color:#555;white-space:pre-wrap;max-height:110px;overflow:auto;background:#faf9f7;border-radius:9px;padding:9px;margin:9px 0}.confidence{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-radius:999px;padding:4px 7px;background:#eef0ef}.confidence.high{background:#e5f1ea;color:#35684c}.confidence.medium{background:#fff3d9;color:#8b651e}.confidence.low{background:#fae7e4;color:#9a4135}.response-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.response-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feedback-needs-review{background:#fff0e2}.feedback-select option{background:#fff}.paused-until{font-size:11px;color:#6c4f88;margin-top:4px}.inbox-count{background:#a54545;color:white;border-radius:999px;padding:2px 7px;font-size:10px;font-weight:800;margin-left:4px}@media(max-width:760px){.response-grid{grid-template-columns:1fr}}
 @media(max-width:900px){.material-grid{grid-template-columns:1fr 1fr}.upload-row{grid-template-columns:1fr 1fr}.upload-row .upload-file{grid-column:1/-1}}@media(max-width:600px){.material-grid{grid-template-columns:1fr}.upload-row{grid-template-columns:1fr}.cover-wrap{flex-direction:column}.book-cover{width:120px}}
 .smart-upload{border:2px dashed #b7c4bf;border-radius:16px;padding:22px;background:#fafcfb;text-align:center;transition:.15s}.smart-upload.dragover{border-color:var(--accent);background:var(--accent-soft)}.smart-upload h3{margin:0 0 6px}.smart-upload p{margin:0 0 14px;color:var(--muted);font-size:13px}.smart-upload input{display:none}.smart-review{margin-top:16px}.smart-review-card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff;margin-bottom:10px}.smart-review-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:10px;align-items:end}.smart-review-grid input,.smart-review-grid select{width:100%;border:1px solid var(--line);border-radius:9px;padding:8px;background:#fff}.smart-review-file{font-size:12px;color:var(--muted);margin-bottom:10px}.smart-hint{font-size:11px;color:var(--muted);margin-top:5px}.smart-confidence{display:inline-flex;border-radius:999px;padding:4px 7px;font-size:10px;font-weight:700;background:#eef0ef}.smart-confidence.high{background:#e5f1ea;color:#35684c}.smart-confidence.medium{background:#fff3d9;color:#8b651e}.smart-confidence.low{background:#fae7e4;color:#9a4135}.date-source{font-size:11px;color:var(--muted);margin-top:3px}.manual-fallback{margin-top:14px}.manual-fallback summary{cursor:pointer;color:var(--accent);font-weight:650}.calculated-badge{background:#edf3f1;color:#315c56}.upload-summary{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}@media(max-width:900px){.smart-review-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.smart-review-grid{grid-template-columns:1fr}}
 
-.pitch-toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.pitch-toolbar .spacer{flex:1}.new-reply-row{background:#fffaf0!important}.new-reply-pill{display:inline-block;background:#9b3d31;color:#fff;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;letter-spacing:.04em;margin-left:6px}.triage-shell{border:1px solid var(--line);border-radius:16px;background:#fff;margin:14px 0 18px;overflow:hidden}.triage-head{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);background:#faf9f7}.triage-card{padding:16px}.triage-message{white-space:pre-wrap;background:#f8f8f6;border:1px solid #ece9e3;border-radius:12px;padding:14px;max-height:260px;overflow:auto;font-size:13px;line-height:1.5;margin:12px 0}.triage-buttons{display:flex;gap:7px;flex-wrap:wrap}.triage-buttons button{font-weight:700}.subtriage{margin-top:10px;padding:10px;border-radius:10px;background:#f7f5f0;display:flex;gap:7px;flex-wrap:wrap;align-items:center}.pitch-checkbox{width:17px;height:17px;accent-color:var(--accent)}.pitch-select-col{width:36px}.shortcut-hint{font-size:11px;color:var(--muted);margin-top:8px}.auto-processed{background:#eaf3ee;border:1px solid #cfe2d7;border-radius:10px;padding:9px 11px;font-size:12px;margin-top:10px}.import-replies-box{display:flex;gap:9px;align-items:center;flex-wrap:wrap;background:#f4f6f7;border:1px solid #dce1e3;border-radius:12px;padding:11px 12px}.reply-review-button{position:relative}.reply-review-button .inbox-count{margin-left:5px}.paused-row{opacity:.78}.followup-policy{font-size:11px;color:var(--muted)}
+.pitch-toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.pitch-toolbar .spacer{flex:1}.new-reply-row{background:#fffaf0!important}.new-reply-pill{display:inline-block;background:#9b3d31;color:#fff;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;letter-spacing:.04em;margin-left:6px}.triage-shell{border:1px solid var(--line);border-radius:16px;background:#fff;margin:14px 0 18px;overflow:hidden}.triage-head{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);background:#faf9f7}.triage-card{padding:16px}.triage-message{white-space:pre-wrap;background:#f8f8f6;border:1px solid #ece9e3;border-radius:12px;padding:14px;max-height:260px;overflow:auto;font-size:13px;line-height:1.5;margin:12px 0}.triage-buttons{display:flex;gap:7px;flex-wrap:wrap}.triage-buttons button{font-weight:700}.triage-buttons button.active-choice{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}.subtriage[hidden]{display:none!important}.match-saved{font-size:10px;color:var(--accent);margin-top:4px;min-height:14px}.subtriage{margin-top:10px;padding:10px;border-radius:10px;background:#f7f5f0;display:flex;gap:7px;flex-wrap:wrap;align-items:center}.pitch-checkbox{width:17px;height:17px;accent-color:var(--accent)}.pitch-select-col{width:36px}.shortcut-hint{font-size:11px;color:var(--muted);margin-top:8px}.auto-processed{background:#eaf3ee;border:1px solid #cfe2d7;border-radius:10px;padding:9px 11px;font-size:12px;margin-top:10px}.import-replies-box{display:flex;gap:9px;align-items:center;flex-wrap:wrap;background:#f4f6f7;border:1px solid #dce1e3;border-radius:12px;padding:11px 12px}.reply-review-button{position:relative}.reply-review-button .inbox-count{margin-left:5px}.paused-row{opacity:.78}.followup-policy{font-size:11px;color:var(--muted)}
+.outreach-log-wrap{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.outreach-log-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);background:#faf9f7}
+.outreach-log-head h3{margin:0;font-size:15px}
+.outreach-log-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.outreach-log-table th{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:10px;background:#faf9f7;border-bottom:1px solid #ece9e3}
+.outreach-log-table td{padding:9px 10px;border-bottom:1px solid #ece9e3;vertical-align:top}
+.outreach-log-table tr:last-child td{border-bottom:0}
+.outreach-log-table select,.outreach-log-table input,.outreach-log-table textarea{width:100%;border:1px solid #d9d5ce;border-radius:8px;background:#fff;padding:8px;font-size:12px}
+.outreach-log-table textarea{min-height:62px;resize:vertical;line-height:1.35}
+.outreach-log-table .pitch-col{width:18%}.outreach-log-table .subject-col{width:29%}.outreach-log-table .date-col{width:16%}.outreach-log-table .notes-col{width:31%}.outreach-log-table .action-col{width:6%;text-align:center}
+.outreach-log-table .delete-row{padding:7px 8px;font-size:11px}
+.outreach-log-table .edit-row{padding:7px 10px;font-size:11px}
+.outreach-display{font-size:12px;line-height:1.4;white-space:pre-wrap}
+.outreach-display.subject{font-weight:650}
+.outreach-edit-actions{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.outreach-log-table tr.editing{background:#fffdf7}
+.outreach-log-table .action-col{width:10%}
+.outreach-tk-wrap{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.outreach-tk-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);background:#faf9f7}
+.outreach-tk-head h3{margin:0;font-size:15px}
+.outreach-tk-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.outreach-tk-table th{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:10px;background:#faf9f7;border-bottom:1px solid #ece9e3}
+.outreach-tk-table td{padding:9px 10px;border-bottom:1px solid #ece9e3;vertical-align:top}
+.outreach-tk-table tr:last-child td{border-bottom:0}
+.outreach-tk-table input,.outreach-tk-table select,.outreach-tk-table textarea{width:100%;border:1px solid #d9d5ce;border-radius:8px;background:#fff;padding:8px;font-size:12px}
+.outreach-tk-table textarea{min-height:54px;resize:vertical;line-height:1.35}
+.outreach-tk-table .eta-col{width:18%}.outreach-tk-table .pitch-col{width:20%}.outreach-tk-table .subject-col{width:27%}.outreach-tk-table .notes-col{width:29%}.outreach-tk-table .action-col{width:6%}
+@media(max-width:850px){.outreach-tk-table{table-layout:auto;min-width:760px}}
+
+@media(max-width:850px){.outreach-log-table{table-layout:auto;min-width:760px}}
 .response-summary{background:#f6f8f7;border-left:3px solid var(--accent);border-radius:8px;padding:9px 11px;margin:9px 0;font-size:13px;line-height:1.42}.response-summary strong{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:3px}.latest-summary{max-width:310px;line-height:1.35}.latest-summary .summary-text{display:block;margin-bottom:6px}.latest-summary .note-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
@@ -128,13 +158,13 @@ const defaultState = {campaigns:seed,outreach:[
  {id:'mat-ks-plans',campaignKey:'c001',campaign:'KEEPING SCORE',name:'Publicity Plans — Final',materialType:'Publicity Plans',dueDate:'2026-03-25',status:'Final',filename:'Publicity Plans Final_KEEPING SCORE.docx',bundledPath:'assets/keeping-score-publicity-plans.docx'},
  {id:'mat-ks-release',campaignKey:'c001',campaign:'KEEPING SCORE',name:'Press Release',materialType:'Press Release',dueDate:'2026-07-21',status:'Final',filename:'Press Release_KEEPING SCORE.docx',bundledPath:'assets/keeping-score-press-release.docx'},
  {id:'mat-ks-cover',campaignKey:'c001',campaign:'KEEPING SCORE',name:'Book Cover',materialType:'Cover Art',dueDate:'',status:'Final',filename:'9780593819104.jpg',bundledPath:'assets/keeping-score-cover.jpg'}
-],pitchRows:[],responseInbox:[]};
+],pitchRows:[],responseInbox:[],outreachTK:[]};
 const CAMPAIGN_TYPES=['PRIORITY','MIDLIST OPPORTUNITY','MIDLIST','MASS MARKET/COZY','TRADE PAPERBACK REPRINT OPPORTUNITY','TRADE PAPERBACK REPRINT','BERKELEY XO/PENGUIN YOUNG READERS LED'];
 function campaignKey(c){return c.id || `${c.title}|${c.pubDate}`}
 function typeClass(t){const m={'PRIORITY':'priority','MIDLIST OPPORTUNITY':'midlist-opportunity','MIDLIST':'midlist','MASS MARKET/COZY':'mass-market-cozy','TRADE PAPERBACK REPRINT OPPORTUNITY':'trade-paperback-reprint-opportunity','TRADE PAPERBACK REPRINT':'trade-paperback-reprint','BERKELEY XO/PENGUIN YOUNG READERS LED':'partner-led'};return m[t]||''}
 function migrateState(saved){if(!saved)return structuredClone(defaultState);const merged=structuredClone(defaultState);const oldCampaigns=saved.campaigns||[];merged.campaigns=seed.map(sc=>{const old=oldCampaigns.find(c=>(c.pubDate===sc.pubDate&&c.title.toUpperCase()===sc.title.toUpperCase()));return old?{...sc,...old,id:sc.id,campaignType:sc.campaignType,campaignSubtype:sc.campaignSubtype,format:old.format||sc.format,goal:old.goal||sc.goal,hooks:(old.hooks&&old.hooks.length?old.hooks:sc.hooks),tasks:old.tasks||sc.tasks}:sc});
  const extras=oldCampaigns.filter(oc=>!seed.some(sc=>sc.pubDate===oc.pubDate&&sc.title.toUpperCase()===oc.title.toUpperCase())).map((c,i)=>({...c,id:c.id||`legacy-${i}`,campaignType:c.campaignType||'MIDLIST'}));merged.campaigns.push(...extras);
- ['outreach','opportunities','events','coverage'].forEach(k=>{merged[k]=(saved[k]||defaultState[k]||[]).map(r=>{if(r.campaignKey)return r;const matches=merged.campaigns.filter(c=>c.title===r.campaign);return {...r,campaignKey:matches.length?campaignKey(matches[0]):''}})});merged.materials=(saved.materials||defaultState.materials||[]);merged.pitchRows=(saved.pitchRows||defaultState.pitchRows||[]);merged.responseInbox=(saved.responseInbox||defaultState.responseInbox||[]);return merged}
+ ['outreach','opportunities','events','coverage'].forEach(k=>{merged[k]=(saved[k]||defaultState[k]||[]).map(r=>{if(r.campaignKey)return r;const matches=merged.campaigns.filter(c=>c.title===r.campaign);return {...r,campaignKey:matches.length?campaignKey(matches[0]):''}})});merged.materials=(saved.materials||defaultState.materials||[]);merged.pitchRows=(saved.pitchRows||defaultState.pitchRows||[]);merged.responseInbox=(saved.responseInbox||defaultState.responseInbox||[]);merged.outreachTK=(saved.outreachTK||defaultState.outreachTK||[]);return merged}
 let state = migrateState(JSON.parse(localStorage.getItem('publicityCommandCenter')||'null'));
 function persist(){localStorage.setItem('publicityCommandCenter',JSON.stringify(state));renderAll()}
 function parseDate(s){return s?new Date(s+'T12:00:00'):null}
@@ -187,7 +217,58 @@ function materialDB(){if(materialDBPromise)return materialDBPromise;materialDBPr
 async function storeMaterialBlob(id,file){const db=await materialDB();return new Promise((resolve,reject)=>{const tx=db.transaction('files','readwrite');tx.objectStore('files').put({id,blob:file,filename:file.name,type:file.type});tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)})}
 async function getMaterialBlob(id){const db=await materialDB();return new Promise((resolve,reject)=>{const req=db.transaction('files').objectStore('files').get(id);req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
 async function deleteMaterialBlob(id){const db=await materialDB();return new Promise((resolve,reject)=>{const tx=db.transaction('files','readwrite');tx.objectStore('files').delete(id);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)})}
-async function openMaterial(id){const m=state.materials.find(x=>x.id===id);if(!m)return;if(m.bundledPath){window.open(m.bundledPath,'_blank');return}const stored=await getMaterialBlob(id);if(!stored){alert('The uploaded file is not available in this browser.');return}const url=URL.createObjectURL(stored.blob);window.open(url,'_blank');setTimeout(()=>URL.revokeObjectURL(url),60000)}
+async function openMaterial(id){
+  const m=state.materials.find(x=>x.id===id);
+  if(!m)return;
+
+  // Open the new tab immediately while this function is still inside the user's
+  // click event. Browsers often block window.open() if it happens only after
+  // awaiting IndexedDB, which is what the old version was doing.
+  const opened=window.open('about:blank','_blank');
+
+  try{
+    if(m.bundledPath){
+      if(opened) opened.location.href=m.bundledPath;
+      else window.location.href=m.bundledPath;
+      return;
+    }
+
+    const stored=await getMaterialBlob(id);
+    if(!stored||!stored.blob){
+      if(opened) opened.close();
+      alert('The uploaded file is not available in this browser. It may have been uploaded in a different browser or on a different computer.');
+      return;
+    }
+
+    const blob=stored.blob instanceof Blob
+      ? stored.blob
+      : new Blob([stored.blob],{type:stored.type||'application/octet-stream'});
+    const url=URL.createObjectURL(blob);
+
+    if(opened){
+      // PDFs/images/text files will display in the browser. Office files such
+      // as DOCX/XLSX may be handed off to the browser's normal download/open flow.
+      opened.location.replace(url);
+    }else{
+      // Popup blocker fallback: trigger the file directly from the same page.
+      const a=document.createElement('a');
+      a.href=url;
+      a.target='_blank';
+      a.rel='noopener';
+      a.download=stored.filename||m.filename||'publicity-material';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+
+    // Keep the object URL alive long enough for large files / Office downloads.
+    setTimeout(()=>URL.revokeObjectURL(url),300000);
+  }catch(err){
+    if(opened) opened.close();
+    console.error('Could not open publicity material:',err);
+    alert('I could not open that file. Please try uploading it again.');
+  }
+}
 let smartMaterialQueue=[];
 function isoDate(d){if(!d||Number.isNaN(d.getTime()))return '';const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
 function calculatedDueDate(c,materialType){if(!c?.pubDate)return '';const rules=MATERIAL_DUE_RULES[c.campaignType]||MATERIAL_DUE_RULES['MIDLIST'];const offset=rules[materialType]??rules.Other??120;const d=parseDate(c.pubDate);d.setDate(d.getDate()-offset);return isoDate(d)}
@@ -270,10 +351,68 @@ function markSelectedAsPitched(key){const ids=[...selectedPitchRows];if(!ids.len
 function toggleReplyReview(){showReplyReview=!showReplyReview;renderCampaignDetail()}
 function pendingRepliesForKey(key){return state.responseInbox.filter(r=>r.campaignKey===key&&(r.reviewStatus==='pending'||r.reviewStatus==='needs-match'))}
 function responseForPitchRow(row){return state.responseInbox.find(r=>r.matchPitchRowId===row.id&&(r.reviewStatus==='pending'||r.reviewStatus==='needs-match'))}
-function triageResponse(id,status,detail=''){window.activeCampaignTab='pitchlist';const resp=state.responseInbox.find(x=>x.id===id);if(!resp)return;const row=state.pitchRows.find(x=>x.id===resp.matchPitchRowId);if(!row){alert('Match this response to a pitch-list contact before categorizing it.');return}if(status==='Interest'&&!detail){replySubmenu='interest';renderCampaignDetail();return}if(status==='Pause Pitching'&&!detail){replySubmenu='pause';renderCampaignDetail();return}resp.suggestedStatus=status;resp.suggestedDetail=detail||({Confirmed:'Coverage / booking confirmed',Passed:'Passed / declined',Undeliverable:'Inactive contact / platform',Bounceback:'Email delivery failure'}[status]||status);resp.classificationConfidence='manual';if(status==='Pause Pitching'){const date=document.getElementById('triagePauseDate')?.value||resp.pauseUntil||'';resp.pauseUntil=date}applyResponseToRow(resp,row);resp.reviewStatus='accepted';replySubmenu='';const pending=pendingRepliesForKey(resp.campaignKey);replyReviewIndex=Math.max(0,Math.min(replyReviewIndex,pending.length-1));if(!pending.length)showReplyReview=false;persist()}
+function setResponseMatch(id,value){
+  const r=state.responseInbox.find(x=>x.id===id);
+  if(!r)return;
+  r.matchPitchRowId=value||'';
+  r.matchConfidence=value?'manual':'low';
+  if(r.reviewStatus==='needs-match'&&value)r.reviewStatus='pending';
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  const note=document.getElementById('triageMatchSaved');
+  if(note){
+    note.textContent=value?'✓ Match saved':'Match cleared';
+    clearTimeout(window.__matchSavedTimer);
+    window.__matchSavedTimer=setTimeout(()=>{if(note)note.textContent='';},1200);
+  }
+}
+function toggleTriageSubmenu(type){
+  replySubmenu=replySubmenu===type?'':type;
+  const interest=document.getElementById('triageInterestMenu');
+  const pause=document.getElementById('triagePauseMenu');
+  if(interest)interest.hidden=replySubmenu!=='interest';
+  if(pause)pause.hidden=replySubmenu!=='pause';
+  document.querySelectorAll('[data-triage-choice]').forEach(b=>b.classList.remove('active-choice'));
+  if(replySubmenu){
+    document.querySelector(`[data-triage-choice="${replySubmenu}"]`)?.classList.add('active-choice');
+  }
+}
+function triageResponse(id,status,detail=''){
+  window.activeCampaignTab='pitchlist';
+  const resp=state.responseInbox.find(x=>x.id===id);
+  if(!resp)return;
+  const row=state.pitchRows.find(x=>x.id===resp.matchPitchRowId);
+  if(!row){
+    alert('Choose the matching pitch-list contact first.');
+    document.getElementById('triageMatchSelect')?.focus();
+    return;
+  }
+  resp.suggestedStatus=status;
+  resp.suggestedDetail=detail||({Confirmed:'Coverage / booking confirmed',Passed:'Passed / declined',Undeliverable:'Inactive contact / platform',Bounceback:'Email delivery failure'}[status]||status);
+  resp.classificationConfidence='manual';
+  if(status==='Pause Pitching'){
+    resp.pauseUntil=document.getElementById('triagePauseDate')?.value||resp.pauseUntil||'';
+  }else{
+    resp.pauseUntil='';
+  }
+  resp.summary=responseSummary(resp.body,resp.subject,{status:resp.suggestedStatus,detail:resp.suggestedDetail,pauseUntil:resp.pauseUntil,replacementEmail:resp.replacementEmail,failedEmail:resp.failedEmail});
+  applyResponseToRow(resp,row);
+  resp.reviewStatus='accepted';
+  replySubmenu='';
+  const pending=pendingRepliesForKey(resp.campaignKey);
+  replyReviewIndex=Math.max(0,Math.min(replyReviewIndex,pending.length-1));
+  if(!pending.length)showReplyReview=false;
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
 function setReplyReviewIndex(key,delta){const p=pendingRepliesForKey(key);if(!p.length)return;replyReviewIndex=(replyReviewIndex+delta+p.length)%p.length;replySubmenu='';renderCampaignDetail()}
-function reviewRepliesPanel(key){const pending=pendingRepliesForKey(key);if(!pending.length)return '';replyReviewIndex=Math.max(0,Math.min(replyReviewIndex,pending.length-1));const r=pending[replyReviewIndex];const row=state.pitchRows.find(x=>x.id===r.matchPitchRowId);return `<div class="triage-shell" id="replyTriage"><div class="triage-head"><div><strong>${pending.length} repl${pending.length===1?'y':'ies'} to review</strong><div class="small muted">${replyReviewIndex+1} of ${pending.length} · human replies stay here until you classify them</div></div><div class="actions"><button class="btn" onclick="setReplyReviewIndex('${key}',-1)">←</button><button class="btn" onclick="setReplyReviewIndex('${key}',1)">→</button><button class="btn danger" onclick="deleteResponse('${r.id}')">Delete</button></div></div><div class="triage-card"><div><strong>${r.subject||r.filename}</strong><div class="small muted">${r.from||r.email||'Unknown sender'} · ${fmtDate(r.date)}</div></div><div class="field" style="margin-top:10px"><label>Matched Pitch-List Contact</label><select onchange="updateResponse('${r.id}','matchPitchRowId',this.value);updateResponse('${r.id}','matchConfidence',this.value?'manual':'low')"><option value="">— No match —</option>${state.pitchRows.filter(p=>p.campaignKey===key).map(p=>`<option value="${p.id}" ${r.matchPitchRowId===p.id?'selected':''}>${p.outlet}${p.contact?' — '+p.contact:''}${p.email?' — '+p.email:''}</option>`).join('')}</select></div><div class="triage-message">${String(r.body||'').replaceAll('&','&amp;').replaceAll('<','&lt;')}</div>${r.replacementEmail?`<div class="replacement-box"><strong>Replacement contact detected:</strong> ${r.replacementEmail}<div style="margin-top:7px"><button class="btn" onclick="replacePitchContactFromResponse('${r.id}')">Replace Email in Pitch List</button></div></div>`:''}<div class="triage-buttons"><button class="btn primary" onclick="triageResponse('${r.id}','Confirmed')">Confirmed</button><button class="btn" onclick="triageResponse('${r.id}','Interest')">Interest</button><button class="btn" onclick="triageResponse('${r.id}','Passed')">Passed</button><button class="btn" onclick="triageResponse('${r.id}','Pause Pitching')">Pause</button><button class="btn" onclick="triageResponse('${r.id}','Undeliverable')">Undeliverable</button><button class="btn" onclick="triageResponse('${r.id}','Bounceback')">Bounceback</button></div>${replySubmenu==='interest'?`<div class="subtriage"><strong>Interest:</strong><button class="btn" onclick="triageResponse('${r.id}','Interest','Interview / feature request — author action needed')">Author action / interview / feature</button><button class="btn" onclick="triageResponse('${r.id}','Interest','Galley / review copy / NetGalley request')">Book copy / NetGalley</button><button class="btn" onclick="triageResponse('${r.id}','Interest','General interest')">General interest</button></div>`:''}${replySubmenu==='pause'?`<div class="subtriage"><strong>Pause:</strong><button class="btn" onclick="triageResponse('${r.id}','Pause Pitching','Automatic reply / out of office')">OOO / automatic reply</button><button class="btn" onclick="triageResponse('${r.id}','Pause Pitching','Not currently accepting pitches / submissions')">Not currently accepting</button><button class="btn" onclick="triageResponse('${r.id}','Pause Pitching','Asked to circle back later')">Circle back later</button><input id="triagePauseDate" type="date" value="${r.pauseUntil||''}" title="Optional resume date"></div>`:''}<div class="shortcut-hint">Keyboard: C = Confirmed · I = Interest · X = Passed · A = Pause · U = Undeliverable · B = Bounceback</div></div></div>`}
-function handleTriageShortcut(e){if(window.activeCampaignTab!=='pitchlist'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;const c=state.campaigns.find(x=>campaignKey(x)===window.selectedCampaign);if(!c)return;const p=pendingRepliesForKey(campaignKey(c));if(!p.length)return;const r=p[Math.max(0,Math.min(replyReviewIndex,p.length-1))];const map={c:'Confirmed',i:'Interest',x:'Passed',a:'Pause Pitching',u:'Undeliverable',b:'Bounceback'};const status=map[e.key.toLowerCase()];if(status){e.preventDefault();triageResponse(r.id,status)}}
+function reviewRepliesPanel(key){
+  const pending=pendingRepliesForKey(key);
+  if(!pending.length)return '';
+  replyReviewIndex=Math.max(0,Math.min(replyReviewIndex,pending.length-1));
+  const r=pending[replyReviewIndex];
+  return `<div class="triage-shell" id="replyTriage"><div class="triage-head"><div><strong>${pending.length} repl${pending.length===1?'y':'ies'} to review</strong><div class="small muted">${replyReviewIndex+1} of ${pending.length} · classify one reply at a time</div></div><div class="actions"><button class="btn" onclick="setReplyReviewIndex('${key}',-1)">←</button><button class="btn" onclick="setReplyReviewIndex('${key}',1)">→</button><button class="btn danger" onclick="deleteResponse('${r.id}')">Delete</button></div></div><div class="triage-card"><div><strong>${r.subject||r.filename}</strong><div class="small muted">${r.from||r.email||'Unknown sender'} · ${fmtDate(r.date)}</div></div><div class="field" style="margin-top:10px"><label>Matched Pitch-List Contact</label><select id="triageMatchSelect" onchange="setResponseMatch('${r.id}',this.value)"><option value="">— No match —</option>${state.pitchRows.filter(p=>p.campaignKey===key).map(p=>`<option value="${p.id}" ${r.matchPitchRowId===p.id?'selected':''}>${p.outlet}${p.contact?' — '+p.contact:''}${p.email?' — '+p.email:''}</option>`).join('')}</select><div id="triageMatchSaved" class="match-saved"></div></div><div class="triage-message">${String(r.body||'').replaceAll('&','&amp;').replaceAll('<','&lt;')}</div>${r.replacementEmail?`<div class="replacement-box"><strong>Replacement contact detected:</strong> ${r.replacementEmail}<div style="margin-top:7px"><button class="btn" onclick="replacePitchContactFromResponse('${r.id}')">Replace Email in Pitch List</button></div></div>`:''}<div class="triage-buttons"><button class="btn primary" onclick="triageResponse('${r.id}','Confirmed')">Confirmed</button><button class="btn" data-triage-choice="interest" onclick="toggleTriageSubmenu('interest')">Interest ▾</button><button class="btn" onclick="triageResponse('${r.id}','Passed')">Passed</button><button class="btn" data-triage-choice="pause" onclick="toggleTriageSubmenu('pause')">Pause ▾</button><button class="btn" onclick="triageResponse('${r.id}','Undeliverable')">Undeliverable</button><button class="btn" onclick="triageResponse('${r.id}','Bounceback')">Bounceback</button></div><div class="subtriage" id="triageInterestMenu" ${replySubmenu==='interest'?'':'hidden'}><strong>Interest:</strong><button class="btn" onclick="triageResponse('${r.id}','Interest','Interview / feature request — author action needed')">Author action / interview / feature</button><button class="btn" onclick="triageResponse('${r.id}','Interest','Galley / review copy / NetGalley request')">Book copy / NetGalley</button><button class="btn" onclick="triageResponse('${r.id}','Interest','General interest')">General interest</button></div><div class="subtriage" id="triagePauseMenu" ${replySubmenu==='pause'?'':'hidden'}><strong>Pause:</strong><button class="btn" onclick="triageResponse('${r.id}','Pause Pitching','Automatic reply / out of office')">OOO / automatic reply</button><button class="btn" onclick="triageResponse('${r.id}','Pause Pitching','Not currently accepting pitches / submissions')">Not currently accepting</button><button class="btn" onclick="triageResponse('${r.id}','Pause Pitching','Asked to circle back later')">Circle back later</button><input id="triagePauseDate" type="date" value="${r.pauseUntil||''}" title="Optional resume date"></div><div class="shortcut-hint">Keyboard: C = Confirmed · I = Interest · X = Passed · A = Pause · U = Undeliverable · B = Bounceback</div></div></div>`;
+}
+function handleTriageShortcut(e){if(window.activeCampaignTab!=='pitchlist'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;const c=state.campaigns.find(x=>campaignKey(x)===window.selectedCampaign);if(!c)return;const p=pendingRepliesForKey(campaignKey(c));if(!p.length)return;const r=p[Math.max(0,Math.min(replyReviewIndex,p.length-1))];const map={c:'Confirmed',i:'Interest',x:'Passed',a:'Pause Pitching',u:'Undeliverable',b:'Bounceback'};const status=map[e.key.toLowerCase()];if(status){e.preventDefault();if(status==='Interest')toggleTriageSubmenu('interest');else if(status==='Pause Pitching')toggleTriageSubmenu('pause');else triageResponse(r.id,status)}}
 if(!window.__triageKeysBound){window.addEventListener('keydown',handleTriageShortcut);window.__triageKeysBound=true}
 function responseInboxView(key){const all=state.responseInbox.filter(r=>r.campaignKey===key);const pending=all.filter(r=>r.reviewStatus==='pending'||r.reviewStatus==='needs-match');const processed=all.filter(r=>r.reviewStatus==='accepted'||r.reviewStatus==='dismissed');const clear=pending.filter(r=>r.reviewStatus==='pending'&&r.matchPitchRowId&&r.classificationConfidence==='high'&&r.matchConfidence==='high');const pitch=state.pitchRows.filter(r=>r.campaignKey===key);const matchOptions=(selected)=>`<option value="">— No match —</option>${pitch.map(p=>`<option value="${p.id}" ${selected===p.id?'selected':''}>${p.outlet}${p.contact?' — '+p.contact:''}${p.email?' — '+p.email:''}</option>`).join('')}`;const statusOptions=PITCH_FEEDBACK.filter(x=>x!=='No Response');return `<div class="response-drop" id="responseDrop" ondragover="event.preventDefault();this.classList.add('drag')" ondragleave="this.classList.remove('drag')" ondrop="dropResponses('${key}',event)"><h3 class="section-title">Import Pitch Responses</h3><div class="muted small">Save Outlook responses as <strong>.eml</strong> (best), .msg (experimental), or .txt, then drag them here or choose a batch. The dashboard distinguishes true delivery failures from inactive contacts/platforms, detects out-of-office dates, and suggests response subcategories.</div><div style="margin-top:12px"><label class="btn primary" style="cursor:pointer">Choose Email Files<input id="responseFiles" type="file" accept=".eml,.msg,.txt,message/rfc822" multiple hidden onchange="importResponses('${key}',this)"></label></div></div><div class="sync-note" style="margin-top:12px"><span>✓</span><div><strong>Review-first automation:</strong> exact-email + high-confidence classifications can be accepted in bulk. Bounceback is reserved for literal email delivery failures; inactive contacts/platforms are marked Undeliverable.</div></div><div class="actions" style="margin-bottom:12px"><button class="btn primary" ${clear.length?'':'disabled'} onclick="acceptAllClear('${key}')">Accept All Clear Matches (${clear.length})</button>${all.length?`<button class="btn danger" onclick="clearResponses('${key}')">Delete All Imported Responses</button>`:''}</div>${!pending.length?'<div class="panel"><div class="empty">No imported responses need review.</div></div>':`<div class="response-grid">${pending.map(r=>`<div class="response-card"><div class="response-head"><div><strong>${r.subject||r.filename}</strong><div class="small muted">${r.from||r.email||'Unknown sender'} · ${fmtDate(r.date)}</div>${r.failedEmail?`<div class="small muted">Failed recipient: ${r.failedEmail}</div>`:''}</div><span class="confidence ${r.classificationConfidence}">${r.classificationConfidence} confidence</span></div><div class="field" style="margin-top:9px"><label>Matched Pitch-List Contact</label><select onchange="updateResponse('${r.id}','matchPitchRowId',this.value);updateResponse('${r.id}','matchConfidence',this.value?'manual':'low')">${matchOptions(r.matchPitchRowId)}</select></div><div class="response-summary"><strong>Quick Summary</strong>${String(r.summary||responseSummary(r.body,r.subject,{status:r.suggestedStatus,detail:r.suggestedDetail,pauseUntil:r.pauseUntil,replacementEmail:r.replacementEmail,failedEmail:r.failedEmail})).replaceAll('&','&amp;').replaceAll('<','&lt;')}</div><details><summary class="small linklike">View full response</summary><div class="response-body">${String(r.body||'').replaceAll('&','&amp;').replaceAll('<','&lt;')}</div></details><div><span class="response-detail">${r.suggestedDetail||'Needs review'}</span></div>${r.replacementEmail?`<div class="replacement-box"><strong>Replacement contact detected:</strong> ${r.replacementEmail}${r.replacementApplied?' · ✓ Added to pitch list':`<div style="margin-top:7px"><button class="btn" onclick="replacePitchContactFromResponse('${r.id}')">Replace Email in Pitch List</button></div>`}</div>`:''}<div class="response-actions"><select class="feedback-select ${feedbackClass(r.suggestedStatus)}" onchange="updateResponse('${r.id}','suggestedStatus',this.value)">${statusOptions.map(s=>`<option ${r.suggestedStatus===s?'selected':''}>${s}</option>`).join('')}<option ${r.suggestedStatus==='Needs Review'?'selected':''}>Needs Review</option></select>${r.suggestedStatus==='Pause Pitching'?`<input type="date" value="${r.pauseUntil||''}" onchange="updateResponse('${r.id}','pauseUntil',this.value)" title="Return / resume pitching date">`:''}<button class="btn primary" onclick="acceptResponse('${r.id}')">Accept</button><button class="btn" onclick="dismissResponse('${r.id}')">Dismiss</button><button class="btn danger response-delete" onclick="deleteResponse('${r.id}')">Delete</button></div><div class="small muted" style="margin-top:8px">Suggested action: ${r.suggestedAction||'Review response'}</div></div>`).join('')}</div>`}${processed.length?`<div class="panel" style="margin-top:18px"><div class="panel-head"><h3>Processed Responses (${processed.length})</h3></div><div style="overflow:auto"><table class="campaign-list"><thead><tr><th>Date</th><th>Sender</th><th>Matched Contact</th><th>Result</th><th>Detail</th><th>File</th><th></th></tr></thead><tbody>${processed.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(r=>`<tr><td>${fmtDate(r.date)}</td><td>${r.from||r.email||'—'}</td><td>${responseMatchLabel(r)}</td><td>${r.reviewStatus==='accepted'?r.suggestedStatus:'Dismissed'}</td><td>${r.suggestedDetail||'—'}</td><td>${r.filename}</td><td><div style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn danger" onclick="deleteResponse('${r.id}')">Delete</button>${r.reviewStatus==='accepted'&&r.matchPitchRowId?`<button class="btn" onclick="deleteResponse('${r.id}',true)">Delete + Reset</button>`:''}</div></td></tr>`).join('')}</tbody></table></div></div>`:''}`}
 function pitchFollowupDate(row){if(row.feedback==='Pause Pitching'&&row.pauseUntil)return row.pauseUntil;return row.followUpDate||''}
@@ -284,12 +423,123 @@ function htmlText(v){return String(v??'').replaceAll('&','&amp;').replaceAll('<'
 function updateCampaignOverviewField(key,field,value){window.activeCampaignTab='overview';const c=state.campaigns.find(x=>campaignKey(x)===key);if(!c)return;c[field]=value;if(field==='coverRevealType'&&value==='')c.coverRevealDate='';persist()}
 function overviewToggleValue(c,field){if(c[field]===true||c[field]==='yes')return true;if(c[field]===false||c[field]==='no')return false;if(field==='physicalGalleysAvailable')return !!((c.galleyQuantity&&String(c.galleyQuantity).toUpperCase()!=='N/A')||c.physicalGalleyEta);if(field==='coverRevealPlanned')return !!(c.coverRevealType||c.coverRevealDate||c.coverRevealLiveLink);if(field==='marketingPublicityMeetingPlanned')return !!c.marketingPublicityMeetingDate;if(field==='hasCoPublicist')return !!(c.coPublicistName||c.coPublicistEmail);return false}
 function yesNoToggle(key,field,value){const yes=overviewToggleValue(value,field);return `<div class="yesno-toggle" role="group" aria-label="Yes or No" data-toggle-field="${field}"><button type="button" class="${yes?'active':''}" aria-pressed="${yes}" onclick="updateCampaignToggle('${key}','${field}',true,this)">Yes</button><button type="button" class="${!yes?'active':''}" aria-pressed="${!yes}" onclick="updateCampaignToggle('${key}','${field}',false,this)">No</button></div>`}
-function updateCampaignToggle(key,field,checked,button){window.activeCampaignTab='overview';const c=state.campaigns.find(x=>campaignKey(x)===key);if(!c)return;c[field]=checked?'yes':'no';if(field==='physicalGalleysAvailable'&&!checked){c.galleyQuantity='N/A';c.physicalGalleyEta=''}if(field==='physicalGalleysAvailable'&&checked&&(!c.galleyQuantity||String(c.galleyQuantity).toUpperCase()==='N/A'))c.galleyQuantity='';if(field==='coverRevealPlanned'&&!checked){c.coverRevealType='';c.coverRevealDate='';c.coverRevealLiveLink=''}if(field==='marketingPublicityMeetingPlanned'&&!checked){c.marketingPublicityMeetingDate=''}if(field==='hasCoPublicist'&&!checked){c.coPublicistName='';c.coPublicistEmail=''}persist();const toggle=button?.closest('.yesno-toggle');if(toggle){toggle.querySelectorAll('button').forEach((b,i)=>{const active=checked?i===0:i===1;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))})}const fields=document.querySelector(`[data-dependent-field="${field}"]`);if(fields)fields.style.display=checked?'grid':'none';const help=document.querySelector(`[data-dependent-help="${field}"]`);if(help)help.style.display=checked?'none':'block';if(!checked&&fields){fields.querySelectorAll('input,select,textarea').forEach(el=>{if(el.tagName==='SELECT')el.value='';else if(el.type!=='button')el.value='';})}if(checked&&field==='physicalGalleysAvailable'){const q=document.querySelector(`[data-dependent-field="${field}"] input`);if(q&&q.value.toUpperCase()==='N/A')q.value=''}}
+function updateCampaignToggle(key,field,checked,button){
+  window.activeCampaignTab='overview';
+  const c=state.campaigns.find(x=>campaignKey(x)===key);
+  if(!c)return;
+  c[field]=checked?'yes':'no';
+  if(field==='physicalGalleysAvailable'){
+    if(checked){if(!c.galleyQuantity||String(c.galleyQuantity).toUpperCase()==='N/A')c.galleyQuantity='';}
+    else{c.galleyQuantity='N/A';c.physicalGalleyEta='';}
+  }
+  if(field==='coverRevealPlanned'&&!checked){c.coverRevealType='';c.coverRevealDate='';c.coverRevealLiveLink='';}
+  if(field==='marketingPublicityMeetingPlanned'&&!checked){c.marketingPublicityMeetingDate='';}
+  if(field==='hasCoPublicist'&&!checked){c.coPublicistName='';c.coPublicistEmail='';}
+  // Save without calling persist(), because persist() re-renders the entire app while the click handler is still running.
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  // Re-render only the current campaign. This guarantees the dependent fields appear/disappear immediately.
+  renderCampaignDetail();
+}
 async function uploadCampaignCover(key,input){window.activeCampaignTab='overview';const file=input?.files?.[0];if(!file)return;if(!file.type.startsWith('image/')){alert('Please choose an image file for the cover.');return}const c=state.campaigns.find(x=>campaignKey(x)===key);if(!c)return;const id='cover-'+crypto.randomUUID();await storeMaterialBlob(id,file);c.coverFileId=id;c.cover='';persist();renderCampaignDetail()}
 async function removeCampaignCover(key){window.activeCampaignTab='overview';const c=state.campaigns.find(x=>campaignKey(x)===key);if(!c)return;c.coverFileId='';c.cover='';persist();renderCampaignDetail()}
 async function loadCampaignCover(c){const img=document.getElementById('overviewCoverImg');const placeholder=document.getElementById('overviewCoverPlaceholder');if(!img)return;if(c.cover){img.src=c.cover;img.style.display='block';if(placeholder)placeholder.style.display='none';return}if(!c.coverFileId){img.style.display='none';if(placeholder)placeholder.style.display='flex';return}const stored=await getMaterialBlob(c.coverFileId);if(!stored){img.style.display='none';if(placeholder)placeholder.style.display='flex';return}const url=URL.createObjectURL(stored.blob);img.src=url;img.style.display='block';if(placeholder)placeholder.style.display='none';img.onload=()=>setTimeout(()=>URL.revokeObjectURL(url),30000)}
 function openNetGalley(url){if(!url)return;let u=url.trim();if(!/^https?:\/\//i.test(u))u='https://'+u;window.open(u,'_blank')}
 function overviewDateCard(label,field,c,key){return `<div class="indicator-card"><label>${label}</label><input type="date" value="${htmlAttr(c[field]||'')}" onchange="updateCampaignOverviewField('${key}','${field}',this.value)"></div>`}
+
+function parseTeamContacts(c,role){
+  const listField=role+'Contacts';
+  if(Array.isArray(c[listField])&&c[listField].length)return c[listField];
+  const nameField=role==='marketer'?'marketerNames':role==='editor'?'editorNames':'agentNames';
+  const emailField=role==='marketer'?'marketerEmails':role==='editor'?'editorEmails':'agentEmails';
+  const names=String(c[nameField]||'').split(/\s*;\s*|\n+/).map(s=>s.trim()).filter(Boolean);
+  const emails=String(c[emailField]||'').split(/\s*;\s*|\n+/).map(s=>s.trim()).filter(Boolean);
+  const len=Math.max(names.length,emails.length,1);
+  return Array.from({length:len},(_,i)=>({name:names[i]||'',email:emails[i]||''}));
+}
+function syncLegacyTeamFields(c,role){
+  const arr=parseTeamContacts(c,role);
+  const nameField=role==='marketer'?'marketerNames':role==='editor'?'editorNames':'agentNames';
+  const emailField=role==='marketer'?'marketerEmails':role==='editor'?'editorEmails':'agentEmails';
+  c[nameField]=arr.map(x=>x.name).filter(Boolean).join('; ');
+  c[emailField]=arr.map(x=>x.email).filter(Boolean).join('; ');
+}
+function addTeamContact(key,role){
+  window.activeCampaignTab='overview';
+  const c=state.campaigns.find(x=>campaignKey(x)===key); if(!c)return;
+  const field=role+'Contacts';
+  c[field]=parseTeamContacts(c,role).map(x=>({...x}));
+  c[field].push({name:'',email:''});
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
+function removeTeamContact(key,role,index){
+  window.activeCampaignTab='overview';
+  const c=state.campaigns.find(x=>campaignKey(x)===key); if(!c)return;
+  const field=role+'Contacts';
+  c[field]=parseTeamContacts(c,role).map(x=>({...x}));
+  c[field].splice(index,1);
+  if(!c[field].length)c[field]=[{name:'',email:''}];
+  syncLegacyTeamFields(c,role);
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
+function updateTeamContact(key,role,index,subfield,value){
+  const c=state.campaigns.find(x=>campaignKey(x)===key); if(!c)return;
+  const field=role+'Contacts';
+  c[field]=parseTeamContacts(c,role).map(x=>({...x}));
+  if(!c[field][index])c[field][index]={name:'',email:''};
+  c[field][index][subfield]=value;
+  syncLegacyTeamFields(c,role);
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+}
+function teamRoleCard(label,role,c,key){
+  const items=parseTeamContacts(c,role);
+  return `<div class="team-role"><h4>${label}</h4><div class="team-contact-list">${items.map((item,i)=>`<div class="team-contact-entry"><div class="overview-field"><label>Name</label><input value="${htmlAttr(item.name||'')}" onchange="updateTeamContact('${key}','${role}',${i},'name',this.value)"></div><div class="overview-field"><label>Email</label><input type="email" value="${htmlAttr(item.email||'')}" onchange="updateTeamContact('${key}','${role}',${i},'email',this.value)"></div>${i===0&&items.length===1?'<span></span>':`<button type="button" class="btn" onclick="removeTeamContact('${key}','${role}',${i})">Remove</button>`}</div>`).join('')}</div><div class="team-add-row"><button type="button" class="btn" onclick="addTeamContact('${key}','${role}')">+ Add ${label.replace('(s)','').replace('Editors','Editor').replace('Agents','Agent').replace('Marketers','Marketer')}</button></div></div>`;
+}
+
+
+function richExec(cmd,val=null){
+  document.execCommand(cmd,false,val);
+}
+function richFontSize(el,value){
+  el.focus();
+  if(value==='small') document.execCommand('fontSize',false,'2');
+  else if(value==='normal') document.execCommand('fontSize',false,'3');
+  else if(value==='large') document.execCommand('fontSize',false,'4');
+  else if(value==='xlarge') document.execCommand('fontSize',false,'5');
+}
+function richFormatBlock(el,value){
+  el.focus();
+  document.execCommand('formatBlock',false,value);
+}
+function saveRichText(key,field,el){
+  updateCampaignOverviewField(key,field,el.innerHTML);
+}
+function richEditor(label,field,c,key,placeholder){
+  const val=c[field]||'';
+  const looksHtml=/<[a-z][\s\S]*>/i.test(val);
+  const safeContent=looksHtml?val:htmlText(val).replace(/\n/g,'<br>');
+  return `<div class="overview-field"><label>${label}</label><div class="rich-editor"><div class="rich-toolbar">
+    <select onchange="richFormatBlock(this.closest('.rich-editor').querySelector('.rich-body'),this.value);this.value='p'">
+      <option value="p">Paragraph</option><option value="h3">Heading</option><option value="blockquote">Quote</option>
+    </select>
+    <select onchange="richFontSize(this.closest('.rich-editor').querySelector('.rich-body'),this.value);this.value='normal'">
+      <option value="normal">Font Size</option><option value="small">Small</option><option value="normal">Normal</option><option value="large">Large</option><option value="xlarge">X-Large</option>
+    </select>
+    <span class="sep"></span>
+    <button type="button" title="Bold" onmousedown="event.preventDefault();richExec('bold')">B</button>
+    <button type="button" title="Italic" onmousedown="event.preventDefault();richExec('italic')"><em>I</em></button>
+    <button type="button" title="Underline" onmousedown="event.preventDefault();richExec('underline')"><u>U</u></button>
+    <span class="sep"></span>
+    <button type="button" title="Bulleted list" onmousedown="event.preventDefault();richExec('insertUnorderedList')">• List</button>
+    <button type="button" title="Numbered list" onmousedown="event.preventDefault();richExec('insertOrderedList')">1. List</button>
+    <span class="sep"></span>
+    <button type="button" title="Undo" onmousedown="event.preventDefault();richExec('undo')">↶</button>
+    <button type="button" title="Redo" onmousedown="event.preventDefault();richExec('redo')">↷</button>
+    <button type="button" title="Clear formatting" onmousedown="event.preventDefault();richExec('removeFormat')">Clear</button>
+  </div><div class="rich-body" contenteditable="true" data-placeholder="${htmlAttr(placeholder||'')}" oninput="saveRichText('${key}','${field}',this)" onblur="saveRichText('${key}','${field}',this)">${safeContent}</div></div></div>`;
+}
+
 function campaignOverview(c,pitchRows,pendingResponses,opp,hooks){const key=campaignKey(c);return `<div class="overview-stack">
 <div class="overview-hero-grid">
   <div class="overview-card"><div class="overview-card-head"><h3>Book Cover</h3></div><div class="overview-card-body"><div class="cover-uploader"><img id="overviewCoverImg" alt="${htmlAttr(c.title)} cover" style="display:none"><div id="overviewCoverPlaceholder" class="cover-placeholder">No cover uploaded</div><label class="btn primary" style="cursor:pointer">${c.coverFileId||c.cover?'Replace Cover':'Upload Cover'}<input type="file" accept="image/*" hidden onchange="uploadCampaignCover('${key}',this)"></label>${c.coverFileId||c.cover?`<button class="btn danger" onclick="removeCampaignCover('${key}')">Remove</button>`:''}</div></div></div>
@@ -311,9 +561,9 @@ function campaignOverview(c,pitchRows,pendingResponses,opp,hooks){const key=camp
 <div class="overview-section-grid">
  <div class="overview-card"><div class="overview-card-head"><h3>Pub Team</h3><span class="section-note">Names + emails</span></div><div class="overview-card-body"><div class="overview-team-grid">
   <div class="team-role"><div class="conditional-card-head" style="margin-bottom:10px"><h4 style="margin:0">Co-Publicist</h4>${yesNoToggle(key,'hasCoPublicist',c)}</div><div class="team-contact-row" data-dependent-field="hasCoPublicist" style="display:${overviewToggleValue(c,'hasCoPublicist')?'grid':'none'}"><div class="overview-field"><label>Name</label><input value="${htmlAttr(c.coPublicistName||'')}" placeholder="Name" onchange="updateCampaignOverviewField('${key}','coPublicistName',this.value)"></div><div class="overview-field"><label>Email</label><input type="email" value="${htmlAttr(c.coPublicistEmail||'')}" placeholder="email@example.com" onchange="updateCampaignOverviewField('${key}','coPublicistEmail',this.value)"></div></div><div class="mini-help" data-dependent-help="hasCoPublicist" style="display:${overviewToggleValue(c,'hasCoPublicist')?'none':'block'}">Select Yes to add co-publicist contact information.</div></div>
-  <div class="team-role"><h4>Marketer(s)</h4><div class="team-contact-row"><div class="overview-field"><label>Name</label><input value="${htmlAttr(c.marketerNames||c.marketers||'')}" placeholder="Name(s)" onchange="updateCampaignOverviewField('${key}','marketerNames',this.value)"></div><div class="overview-field"><label>Email</label><input value="${htmlAttr(c.marketerEmails||'')}" placeholder="email@example.com" onchange="updateCampaignOverviewField('${key}','marketerEmails',this.value)"></div></div></div>
-  <div class="team-role"><h4>Editor(s)</h4><div class="team-contact-row"><div class="overview-field"><label>Name</label><input value="${htmlAttr(c.editorNames||c.editors||'')}" placeholder="Name(s)" onchange="updateCampaignOverviewField('${key}','editorNames',this.value)"></div><div class="overview-field"><label>Email</label><input value="${htmlAttr(c.editorEmails||'')}" placeholder="email@example.com" onchange="updateCampaignOverviewField('${key}','editorEmails',this.value)"></div></div></div>
-  <div class="team-role"><h4>Agent(s)</h4><div class="team-contact-row"><div class="overview-field"><label>Name</label><input value="${htmlAttr(c.agentNames||c.agents||'')}" placeholder="Name(s)" onchange="updateCampaignOverviewField('${key}','agentNames',this.value)"></div><div class="overview-field"><label>Email</label><input value="${htmlAttr(c.agentEmails||'')}" placeholder="email@example.com" onchange="updateCampaignOverviewField('${key}','agentEmails',this.value)"></div></div></div>
+  ${teamRoleCard('Marketer(s)','marketer',c,key)}
+  ${teamRoleCard('Editor(s)','editor',c,key)}
+  ${teamRoleCard('Agent(s)','agent',c,key)}
  </div></div></div>
  <div class="overview-card"><div class="overview-card-head"><h3>Key Due Dates</h3><span class="section-note">Manual dates</span></div><div class="overview-card-body"><div class="due-grid">
    ${overviewDateCard('Update Contact Info in MyHouse By','myHouseContactDue',c,key)}
@@ -322,10 +572,10 @@ function campaignOverview(c,pitchRows,pendingResponses,opp,hooks){const key=camp
    ${overviewDateCard('Pub Plans Due','pubPlansDue',c,key)}
  </div></div></div>
 </div>
-<div class="overview-card"><div class="overview-card-head"><h3>Campaign Copy</h3><span class="section-note">Copy/paste working text here</span></div><div class="overview-card-body"><div class="overview-copy-grid">
- <div class="overview-field"><label>NetGalley Bullets</label><textarea placeholder="Paste NetGalley bullets…" onchange="updateCampaignOverviewField('${key}','netgalleyBullets',this.value)">${htmlText(c.netgalleyBullets||'')}</textarea></div>
- <div class="overview-field"><label>Strategy Bullets</label><textarea placeholder="Paste strategy bullets…" onchange="updateCampaignOverviewField('${key}','strategyBullets',this.value)">${htmlText(c.strategyBullets||'')}</textarea></div>
- <div class="overview-field"><label>Quick Pitch</label><textarea placeholder="Paste quick pitch…" onchange="updateCampaignOverviewField('${key}','quickPitch',this.value)">${htmlText(c.quickPitch||'')}</textarea></div>
+<div class="overview-card"><div class="overview-card-head"><h3>Campaign Copy</h3><span class="section-note">Rich-text formatting saves automatically</span></div><div class="overview-card-body"><div class="overview-copy-grid">
+ ${richEditor('NetGalley Bullets','netgalleyBullets',c,key,'Paste or draft NetGalley bullets…')}
+ ${richEditor('Strategy Bullets','strategyBullets',c,key,'Paste or draft strategy bullets…')}
+ ${richEditor('Quick Pitch','quickPitch',c,key,'Paste or draft quick pitch…')}
  </div></div></div>
 <div class="overview-section-grid">
  <div class="overview-card"><div class="overview-card-head"><h3>Hooks & Strategy</h3></div><div class="overview-card-body"><div class="hooks">${hooks||'<span class="muted">No hooks added yet.</span>'}</div></div></div>
@@ -338,7 +588,7 @@ function renderCampaignDetail(){const c=state.campaigns.find(x=>campaignKey(x)==
  <div class="tabpage active" id="tab-overview">${campaignOverview(c,pitchRows,pendingResponses,opp,hooks)}</div>
  <div class="tabpage" id="tab-materials"><div class="smart-upload" ondragover="smartDropOver(event)" ondragleave="smartDropLeave(event)" ondrop="smartDropFiles(event,'${campaignKey(c)}')"><h3>Smart Upload Publicity Materials</h3><p>Drop one or multiple files here. The dashboard will detect the material type and status, then calculate the expected due date from <strong>${c.title}</strong>’s publication date and <strong>${c.campaignType}</strong> campaign type.</p><label class="btn primary" style="cursor:pointer">Choose Files<input type="file" multiple accept=".docx,.pdf,.xlsx,.xls,.csv,.jpg,.jpeg,.png,.txt" onchange="smartMaterialInput('${campaignKey(c)}',this)"></label><div class="upload-summary"><span class="badge">No Campaign Master due dates used</span><span class="badge">Bulk upload supported</span><span class="badge">Review before save</span></div></div>${smartReviewCards(campaignKey(c))}<details class="manual-fallback"><summary>Manual upload fallback</summary><div class="upload-box" style="margin-top:10px"><div class="upload-row"><div><div class="small muted">Material Name</div><input id="materialName" placeholder="e.g. Galley Letter"></div><div><div class="small muted">Type</div><select id="materialType">${MATERIAL_TYPES.map(x=>`<option>${x}</option>`).join('')}</select></div><div><div class="small muted">Due Date (optional)</div><input id="materialDue" type="date"><div class="smart-hint">Leave blank to calculate automatically.</div></div><div class="upload-file"><div class="small muted">File</div><input id="materialFile" type="file" accept=".doc,.docx,.pdf,.xlsx,.xls,.jpg,.jpeg,.png,.txt"></div><div><div class="small muted">Status</div><select id="materialStatus">${MATERIAL_STATUSES.map(x=>`<option>${x}</option>`).join('')}</select></div></div><div style="margin-top:10px"><button class="btn" onclick="saveMaterialFromDetail('${campaignKey(c)}')">Upload Manually</button></div></div></details><div style="margin-top:16px">${materialCards(materials)}</div></div>
  <div class="tabpage" id="tab-pitchlist">${pitchListTable(pitchRows,campaignKey(c))}</div>
- <div class="tabpage" id="tab-outreach">${miniTable(out,['Outlet','Pitch Type','Date Sent','Status','Follow-Up'],o=>[o.outlet,o.pitchType||'—',fmtDate(o.dateSent),`<span class="status ${statusClass(o.status)}">${o.status}</span>`,fmtDate(o.followUpDate)])}</div>
+ <div class="tabpage" id="tab-outreach">${outreachLogTable(out,campaignKey(c))}${outreachTKTable(campaignKey(c))}</div>
  <div class="tabpage" id="tab-opps">${miniTable(opp,['Outlet','Opportunity','Status','Deliverable','Due'],o=>[o.outlet,o.type,`<span class="status ${statusClass(o.status)}">${o.status}</span>`,o.deliverable||'—',fmtDate(o.due)])}</div>
  <div class="tabpage" id="tab-events">${miniTable(ev,['Date','Store / Venue','City','Moderator','Status'],e=>[fmtDate(e.date),e.store,e.city,e.moderator||'—',e.status])}</div>
  <div class="tabpage" id="tab-coverage">${miniTable(cov,['Outlet','Type','Date','Headline','Shared'],x=>[x.outlet,x.type,fmtDate(x.date),x.headline||'—',x.shared?'Yes':'No'])}</div>
@@ -346,6 +596,165 @@ function renderCampaignDetail(){const c=state.campaigns.find(x=>campaignKey(x)==
  const activeTab=window.activeCampaignTab||'overview';document.querySelectorAll('#detailTabs button').forEach(x=>x.classList.toggle('active',x.dataset.tab===activeTab));document.querySelectorAll('.tabpage').forEach(x=>x.classList.toggle('active',x.id==='tab-'+activeTab));document.querySelectorAll('#detailTabs button').forEach(b=>b.onclick=()=>{window.activeCampaignTab=b.dataset.tab;document.querySelectorAll('#detailTabs button').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.tabpage').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById('tab-'+b.dataset.tab).classList.add('active')});
  loadCampaignCover(c);
 }
+
+const CAMPAIGN_OUTREACH_TYPES=['Wide','Targeted Follow Ups','Interview','Local','Blog','Event','Guest Post'];
+
+
+function outreachTKTable(key){
+  const rows=(state.outreachTK||[]).filter(x=>x.campaignKey===key);
+  return `<div class="outreach-tk-wrap">
+    <div class="outreach-tk-head">
+      <div><h3>Pitches TK</h3><div class="small muted">For pitches still to come. Track a rough ETA, pitch type, planned subject/angle, and notes.</div></div>
+      <button type="button" class="btn" onclick="addOutreachTKRow('${key}')">+ Add TK Pitch</button>
+    </div>
+    <div style="overflow:auto"><table class="outreach-tk-table">
+      <thead><tr><th class="eta-col">Rough ETA</th><th class="pitch-col">Pitch Type</th><th class="subject-col">Subject / Angle</th><th class="notes-col">Notes</th><th class="action-col"></th></tr></thead>
+      <tbody>${rows.length?rows.map(r=>`<tr>
+        <td><input type="text" value="${htmlAttr(r.eta||'')}" placeholder="e.g. Late Aug / week of 9/7" onchange="updateOutreachTKField('${r.id}','eta',this.value)" onblur="updateOutreachTKField('${r.id}','eta',this.value)"></td>
+        <td><select onchange="updateOutreachTKField('${r.id}','pitchType',this.value)"><option value="">Select type…</option>${CAMPAIGN_OUTREACH_TYPES.map(x=>`<option value="${htmlAttr(x)}" ${r.pitchType===x?'selected':''}>${htmlText(x)}</option>`).join('')}</select></td>
+        <td><input type="text" value="${htmlAttr(r.subjectLine||'')}" placeholder="Planned subject line or pitch angle…" onchange="updateOutreachTKField('${r.id}','subjectLine',this.value)" onblur="updateOutreachTKField('${r.id}','subjectLine',this.value)"></td>
+        <td><textarea placeholder="Notes…" onchange="updateOutreachTKField('${r.id}','notes',this.value)" onblur="updateOutreachTKField('${r.id}','notes',this.value)">${htmlText(r.notes||'')}</textarea></td>
+        <td><button type="button" class="btn delete-row" onclick="deleteOutreachTKRow('${r.id}','${key}')">Delete</button></td>
+      </tr>`).join(''):`<tr><td colspan="5"><div class="empty">No TK pitches yet.</div></td></tr>`}</tbody>
+    </table></div>
+  </div>`;
+}
+function addOutreachTKRow(key){
+  window.activeCampaignTab='outreach';
+  state.outreachTK=state.outreachTK||[];
+  state.outreachTK.push({id:crypto.randomUUID(),campaignKey:key,eta:'',pitchType:'',subjectLine:'',notes:''});
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
+function updateOutreachTKField(id,field,value){
+  const r=(state.outreachTK||[]).find(x=>x.id===id);
+  if(!r)return;
+  r[field]=value;
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+}
+function deleteOutreachTKRow(id,key){
+  if(!confirm('Delete this TK pitch?'))return;
+  window.activeCampaignTab='outreach';
+  state.outreachTK=(state.outreachTK||[]).filter(x=>x.id!==id);
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
+
+function outreachLogTable(items,key){
+  const rows=[...items].sort((a,b)=>{
+    const ad=a.dateSent||'9999-12-31', bd=b.dateSent||'9999-12-31';
+    return ad.localeCompare(bd);
+  });
+  return `<div class="outreach-log-wrap">
+    <div class="outreach-log-head">
+      <div><h3>Outreach Log</h3><div class="small muted">Clean view is sorted from oldest date to newest. Click Edit on any row to make changes.</div></div>
+      <button type="button" class="btn primary" onclick="addCampaignOutreachRow('${key}')">+ Add Outreach</button>
+    </div>
+    <div style="overflow:auto">
+      <table class="outreach-log-table">
+        <thead><tr>
+          <th class="date-col">Date Sent</th>
+          <th class="pitch-col">Pitch Type</th>
+          <th class="subject-col">Subject Line</th>
+          <th class="notes-col">Notes</th>
+          <th class="action-col"></th>
+        </tr></thead>
+        <tbody>${rows.length?rows.map(o=>outreachLogRow(o,key)).join(''):`<tr><td colspan="5"><div class="empty">No outreach logged yet. Click <strong>+ Add Outreach</strong> to start.</div></td></tr>`}</tbody>
+      </table>
+    </div>
+  </div>`;
+}
+
+function outreachLogRow(o,key){
+  const editing=window.editingOutreachId===o.id;
+  const current=CAMPAIGN_OUTREACH_TYPES.includes(o.pitchType)?o.pitchType:'';
+  if(editing){
+    return `<tr class="editing">
+      <td><input id="outreach-date-${o.id}" type="date" value="${htmlAttr(o.dateSent||'')}"></td>
+      <td><select id="outreach-type-${o.id}">
+        <option value="">Select type…</option>
+        ${CAMPAIGN_OUTREACH_TYPES.map(x=>`<option value="${htmlAttr(x)}" ${current===x?'selected':''}>${htmlText(x)}</option>`).join('')}
+      </select></td>
+      <td><input id="outreach-subject-${o.id}" type="text" value="${htmlAttr(o.subjectLine||'')}" placeholder="Email subject line…"></td>
+      <td><textarea id="outreach-notes-${o.id}" placeholder="Add notes…">${htmlText(o.notes||'')}</textarea></td>
+      <td><div class="outreach-edit-actions">
+        <button type="button" class="btn primary edit-row" onclick="saveCampaignOutreachEdit('${o.id}','${key}')">Save</button>
+        <button type="button" class="btn edit-row" onclick="cancelCampaignOutreachEdit('${key}')">Cancel</button>
+        <button type="button" class="btn delete-row" onclick="deleteCampaignOutreachRow('${o.id}','${key}')">Delete</button>
+      </div></td>
+    </tr>`;
+  }
+  return `<tr>
+    <td><div class="outreach-display">${o.dateSent?fmtDate(o.dateSent):'—'}</div></td>
+    <td><div class="outreach-display">${htmlText(o.pitchType||'—')}</div></td>
+    <td><div class="outreach-display subject">${htmlText(o.subjectLine||'—')}</div></td>
+    <td><div class="outreach-display">${htmlText(o.notes||'—')}</div></td>
+    <td><button type="button" class="btn edit-row" onclick="editCampaignOutreachRow('${o.id}','${key}')">Edit</button></td>
+  </tr>`;
+}
+
+function addCampaignOutreachRow(key){
+  window.activeCampaignTab='outreach';
+  const c=state.campaigns.find(x=>campaignKey(x)===key);
+  if(!c)return;
+  const id=crypto.randomUUID();
+  state.outreach.push({
+    id,
+    campaignKey:key,
+    campaign:c.title,
+    pitchType:'',
+    subjectLine:'',
+    dateSent:'',
+    notes:'',
+    status:'Pitched',
+    followUpDate:''
+  });
+  window.editingOutreachId=id;
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
+
+function editCampaignOutreachRow(id,key){
+  window.activeCampaignTab='outreach';
+  window.editingOutreachId=id;
+  renderCampaignDetail();
+}
+
+function cancelCampaignOutreachEdit(key){
+  window.activeCampaignTab='outreach';
+  window.editingOutreachId=null;
+  renderCampaignDetail();
+}
+
+function saveCampaignOutreachEdit(id,key){
+  const o=state.outreach.find(x=>x.id===id);
+  if(!o)return;
+  o.pitchType=document.getElementById('outreach-type-'+id)?.value||'';
+  o.subjectLine=document.getElementById('outreach-subject-'+id)?.value||'';
+  o.dateSent=document.getElementById('outreach-date-'+id)?.value||'';
+  o.notes=document.getElementById('outreach-notes-'+id)?.value||'';
+  window.activeCampaignTab='outreach';
+  window.editingOutreachId=null;
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
+
+function updateCampaignOutreachField(id,field,value){
+  const o=state.outreach.find(x=>x.id===id);
+  if(!o)return;
+  o[field]=value;
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+}
+
+function deleteCampaignOutreachRow(id,key){
+  if(!confirm('Delete this outreach entry?'))return;
+  window.activeCampaignTab='outreach';
+  if(window.editingOutreachId===id)window.editingOutreachId=null;
+  state.outreach=state.outreach.filter(x=>x.id!==id);
+  localStorage.setItem('publicityCommandCenter',JSON.stringify(state));
+  renderCampaignDetail();
+}
+
 function miniTable(items,headers,rowfn){if(!items.length)return '<div class="panel"><div class="empty">Nothing logged yet.</div></div>';return `<div class="panel"><div style="overflow:auto"><table class="campaign-list"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${items.map(i=>`<tr>${rowfn(i).map(v=>`<td>${v}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`}
 function toggleTask(key,i,checked){const c=state.campaigns.find(x=>campaignKey(x)===key);c.tasks[i].status=checked?'done':'todo';persist();renderCampaignDetail()}
 function renderOutreach(){const q=document.getElementById('outreachSearch').value.toLowerCase(),f=document.getElementById('outreachStatusFilter').value;const rows=state.outreach.filter(o=>(campaignName(o)+o.outlet+o.contact+o.pitchAngle).toLowerCase().includes(q)&&(!f||o.status===f)).sort((a,b)=>(b.dateSent||'').localeCompare(a.dateSent||''));document.getElementById('outreachRows').innerHTML=rows.map(o=>`<tr><td><strong>${campaignName(o)}</strong></td><td>${o.outlet}<div class="small muted">${o.contact||'No contact entered'}</div></td><td>${o.pitchType||'—'}<div class="small muted">${o.pitchAngle||''}</div></td><td>${fmtDate(o.dateSent)}</td><td><span class="status ${statusClass(o.status)}">${o.status}</span></td><td>${fmtDate(o.followUpDate)}</td></tr>`).join('')||'<tr><td colspan="6" class="empty">No outreach logged.</td></tr>'}
